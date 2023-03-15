@@ -1,0 +1,17 @@
+1- Initialize node project      DONE    
+
+2- Initialize first views       DONE
+ 
+3- giving each room a unique id     DONE
+
+4- view our video
+ 
+5- allow others to view their video
+
+6- adding styles 
+
+7- creating and sending messages
+
+8- adding mute button
+
+9- adding stop video button

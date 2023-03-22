@@ -4,9 +4,14 @@
  
 3- giving each room a unique id     DONE
 
-4- view our video
+4- view our video  DONE
  
 5- allow others to view their video
+ -set up socket io connection
+ -when a user connects, he is joined to the room by the server then the server emits to other hosts in the room
+ -when other hosts get notified that a new host has joined they will call him and send their stream
+ -at the new host he will answer each call get the sent stream and make a video for each received stream
+ -when other hosts' call are answered, they receive the new host stream so they append it to their window
 
 6- adding styles 
 

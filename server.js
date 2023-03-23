@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const server = require('http').Server(app);
 const io = require("socket.io")(server);
+const path = require('path');
 
 //require peer server to encapsulate our http server and send our audio and video
 //sockets allow sending messages only that's why we use webRtc to share our audio&video stream
@@ -17,7 +18,7 @@ const port = 3030;
 app.set('view engine', 'ejs');
 
 //telling express where to find static files
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //using peer middleware
 app.use('/peerjs', peerServer);
